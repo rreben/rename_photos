@@ -14,14 +14,15 @@ def rename_photos(folder_path):
                 if 'EXIF DateTimeOriginal' in tags:
                     date_str = str(tags['EXIF DateTimeOriginal'])
                     date_obj = datetime.strptime(date_str, '%Y:%m:%d %H:%M:%S')
-                    date_str_format = date_obj.strftime('%Y_%m_%d_%H_%M')
+                    date_str_format = date_obj.strftime('%Y_%m_%d_%H_%M_%S')
                     new_name = date_str_format + os.path.splitext(filename)[1]
                     new_file_path = os.path.join(folder_path, new_name)
 
                     if os.path.exists(new_file_path):
                         print(
                             f"Fehler: Die Datei '{new_name}' existiert "
-                            "bereits."
+                            f"bereits. Die Datei '{filename}' wurde nicht "
+                            f"umbenannt."
                         )
                     else:
                         os.rename(file_path, new_file_path)
