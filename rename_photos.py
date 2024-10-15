@@ -36,9 +36,9 @@ def rename_photos(folder_path):
 @click.argument('folder_path')
 def main(folder_path):
     """
-    Dieses Skript benennt Fotos in einem angegebenen Ordner nach dem 
+    Dieses Skript benennt Fotos in einem angegebenen Ordner nach dem
     Aufnahmedatum um.
-    Der neue Dateiname hat das Format yyyy_mm_dd_hh_mm, und die bestehende 
+    Der neue Dateiname hat das Format yyyy_mm_dd_hh_mm, und die bestehende
     Dateiendung bleibt erhalten.
     Der Pfad zum Ordner muss als Parameter angegeben werden.
     """
