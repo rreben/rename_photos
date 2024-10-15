@@ -63,6 +63,22 @@ Replace `path/to/folder` with the actual path to the folder where your photos ar
 - The script only renames files with `.jpg`, `.jpeg`, or `.png` extensions.
 - The script will print an error if the provided folder path does not exist.
 
+## Running Tests
+
+If you want to run the tests, you will need additional libraries. Install them using:
+
+```sh
+pip install pytest Pillow piexif
+```
+
+To run the tests for this script, use the following command:
+
+```sh
+pytest
+```
+
+Ensure that all the required libraries are installed as mentioned above.
+
 ## Deactivating the Virtual Environment
 
 To deactivate the virtual environment, simply run:
