@@ -70,4 +70,3 @@ To deactivate the virtual environment, simply run:
 ```sh
 deactivate
 ```
-
