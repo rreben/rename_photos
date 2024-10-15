@@ -1,6 +1,6 @@
 # Rename Photos by Date and Time
 
-This Python script renames photos in a specified folder based on their original date and time of capture. The new filename format is `yyyy_mm_dd_hh_mm`, preserving the existing file extension. This is useful for organizing photos chronologically. If a photo lacks EXIF data, it will not be renamed, and an appropriate message will be displayed. If a file with the intended new name already exists, an error message will be shown.
+This Python script renames photos in a specified folder based on their original date and time of capture. The new filename format is `yyyy_mm_dd_hh_mm_ss`, preserving the existing file extension. This is useful for organizing photos chronologically. If a photo lacks EXIF data, it will not be renamed, and an appropriate message will be displayed. If a file with the intended new name already exists, an error message will be shown.
 
 ## Prerequisites
 
