@@ -1,8 +1,9 @@
 import os
+import io
 import pytest
-import rename_photos
+from rename_photos import rename_photos
 from PIL import Image
-from PIL import JpegImagePlugin
+# from PIL import JpegImagePlugin
 import piexif
 
 
@@ -37,9 +38,9 @@ def create_exif_jpeg(datetime_str):
         }
     }
     exif_bytes = piexif.dump(exif_dict)
-    output = JpegImagePlugin.JpegImageFile()
+    output = io.BytesIO()
     img.save(output, "jpeg", exif=exif_bytes)
-    return output.fp.read()
+    return output.getvalue()
 
 
 def test_rename_photos_with_valid_exif(setup_test_directory):
