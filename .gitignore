@@ -1,0 +1,58 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+venv/
+
+# Distribution / packaging
+.Python
+dist/
+build/
+*.egg-info/
+
+# Test results
+htmlcov/
+.tox/
+.nox/
+.coverage
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyInstaller
+# Usually these files are written by a python script from a template
+*.manifest
+*.spec
+
+# Installer logs\pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+coverage.xml
+*.coveragerc
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Python IDEs
+*.spyderproject
+*.spyproject
